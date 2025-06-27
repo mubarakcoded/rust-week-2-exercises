@@ -1,5 +1,6 @@
 use hex::{decode, encode};
 
+
 pub fn decode_hex(hex_str: &str) -> Result<Vec<u8>, String> {
     decode(hex_str).map_err(|e| format!("Invalid hex: {}", e))
 }
